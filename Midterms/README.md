@@ -28,7 +28,9 @@
 
 Submissions are based scored on the **Root Mean Squared Error (RMSE)**.
 
-To get the root mean squared error, use `mean_squared_error()` and set `squared=False`
+To get the root mean squared error, use `mean_squared_error()` and set `squared=False`.
+
+Note: `mean_squared_error(y_test_median, y_pred_median, squared=False)` is now deprecated and will not work with older scikit-learn versions. Use `mean_squared_error(...) ** 0.5` as a replacement for RMSE.
 
 Here is an example:
 
@@ -80,3 +82,7 @@ id,price
 ...
 
 ```
+
+## Notebook Links
+
+The URL links in `midterm_exams.ipynb` are not working because new class updates overwrite those sources.
